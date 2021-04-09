@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="This is an eporfolio">
-        <title>Ilma's Website</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COVID-19</title>
+        <link rel="stylesheet" href="styles.css"/>
     </head>
-    <body style="background-color:lightblue">
-        <h1>Ilma's Website</h1>
-        <hr/>
-        <h2 style="color:green">Styles and Colors</h2>
-        <p style= "color: blue; background-color: azure"">this is a <b>paragraph</b></p>
-        <p>this is another paragraph</p>
-        now is <font face="Comic Sans MS"> the time for </font> all good men
-
-
-        
+    <body>
+   
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="#home" id="navbar__logo">COVID-19</a>
+                <div class="navbar__toggle" id="mobile-menu"></div>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">Services</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
     </body>
 </html>
