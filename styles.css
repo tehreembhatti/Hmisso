@@ -2,12 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', sans-serif;
+    font-family: Arial, serif, "Times New Roman", Helvetica, sans-serif;
     scroll-behavior: smooth;
   }
   
   .navbar {
-    background: #95d1b5;
+    background: #d3e2d7;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -30,7 +30,8 @@
   }
   
   #navbar__logo {
-    background-color: #FFA500;
+    background-color: #fcf4d2;
+    background-image: linear-gradient(to top, #e0b091 0%, #cad9ab 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -83,15 +84,15 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: #CAD9AB;
+    background: ;
+    background: ;
     color: #fff;
     transition: all 0.3s ease;
   }
   
   .navbar__links:hover {
-    color: #9518fc;
+    color: #d8bbf0;
     transition: all 0.3s ease;
   }
   
@@ -111,7 +112,7 @@
       grid-template-columns: auto;
       margin: 0;
       width: 100%;
-      position: absolute;
+      position: absolute;i
       top: -1000px;
       opacity: 1;
       transition: all 0.5s ease;
@@ -119,7 +120,7 @@
     }
   
     .navbar__menu.active {
-      background: #131313;
+      background: #f3e2e2;
       top: 100%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -191,9 +192,12 @@
   
   /* Hero Section */
   .hero {
-    background: #f7ed96;
-    background: linear-gradient(to right, #161616, #000000);
-    padding: 200px 0;
+    background: transparent;
+    /* background: linear-gradient(to right, #161616, #000000); */
+    background-image: url("images/Artboard\ 1.png");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    padding: 150px 0;
   }
   
   .hero__container {
@@ -211,11 +215,11 @@
   .hero__heading {
     font-size: 100px;
     margin-bottom: 24px;
-    color: #fff;
+    color: rgb(173, 194, 173);
   }
   
   .hero__heading span {
-    background: #ee0979; /* fallback for old browsers */
+    background: #5e1adb; /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to right,
       #ff6a00,
@@ -269,7 +273,7 @@
   
   /* About Section */
   .main {
-    background-color: #131313;
+    background-color: #fff8b7;
     padding: 10rem 0;
   }
   
@@ -293,8 +297,8 @@
   
   .main__content h1 {
     font-size: 2rem;
-    background-color: #fe3b6f;
-    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+    background-color: #ddcdfc;
+    background-image: rgb(248, 202, 164);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -309,8 +313,8 @@
     background: #ff8177; /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to right,
-      #9114ff,
-      #da22ff
+      #e4c6ff,
+      #cca2d4
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
       to right,
@@ -332,9 +336,9 @@
   
   .main__btn {
     font-size: 1.8rem;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: #caecbc;
+    background: ;
+    background: ;
     padding: 20px 60px;
     border: none;
     border-radius: 4px;
@@ -359,7 +363,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #ff1ead;
+    background: #ecb1d6;
     transition: all 0.35s;
     border-radius: 4px;
   }
@@ -471,8 +475,8 @@
   }
   
   /* Services Section */
-  .services {
-    background: #131313;
+  .services {#caa3a3
+    background: #635151;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -498,6 +502,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
+
+
   
   .services__card {
     margin: 10px;
@@ -511,32 +517,7 @@
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
     transition: 0.3s ease-in;
   }
-  
-  .services__card:nth-child(2) {
-    background: #1fa2ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #a6ffcb,
-      #12d8fa,
-      #1fa2ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #a6ffcb,
-      #12d8fa,
-      #1fa2ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
-  .services__card:nth-child(3) {
-    background-image: linear-gradient(
-      -225deg,
-      #231557 0%,
-      #44107a 29%,
-      #ff1361 67%,
-      #fff800 100%
-    );
-  }
+
   
   .services__card h2 {
     text-align: center;
@@ -555,12 +536,12 @@
   }
   
   .services__card button {
-    color: #fff;
+    color: rgb(223, 184, 184);
     padding: 14px 24px;
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #131313;
+    background: #c99a9a;
     font-size: 1rem;
   }
   
@@ -573,7 +554,55 @@
     transition: 0.3s ease-in;
     cursor: pointer;
   }
+
+  .services__card#milkjelly {
+    background-image: url("images/milkjelly.JPG");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+  }
+
+  .services__card#solution {
+    background-image: url("images/solution.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+  }
   
+  .services__card#superglow {
+    background-image: url("images/superglow.PNG");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+  }
+
+  .services__card#futuredew {
+    background-image: url("images/futuredew.jfif");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+  }
+
+  .services__card#primingmoisturizer {
+    background-image: url("images/primingmoisturizer.jfif");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+  }
+
+.services__card#balmdotcom {
+    background-image: url("images/balmdotcom.jfif");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+.services__card#invisibleshield {
+    background-image: url("images/invisibleshield.jfif");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+.services__card#moisturizingmoonmask {
+  background-image: url("images/moisturizingmoonmask.jfif");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
   @media screen and (max-width: 1300px) {
     .services__wrapper {
       grid-template-columns: 1fr 1fr;
@@ -588,7 +617,7 @@
   
   /* Footer CSS */
   .footer__container {
-    background-color: #131313;
+    background-color: #fcbaba;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -628,7 +657,7 @@
   
   .footer__link--items h2 {
     margin-bottom: 16px;
-    color: #fff;
+    color: white;
   }
   
 
